@@ -2,16 +2,6 @@
 
 A real-time fruit detection system built with **YOLOv8**, trained on a custom-merged dataset of 12 fruit classes. The system supports both **live webcam inference** and **offline video processing**, with bounding boxes, confidence scores, real-time FPS overlay, and object-counting feature.
 
----
-
-## 📸 Demo
-
-![Detection Demo](assets/Demo1.png)
-
-*Sample detections across strawberry and kiwi classes from the validation set.*
-
----
-
 ## 🗂️ Dataset
 
 The dataset was built on **Roboflow** by merging two source datasets into a single custom fruit-detection dataset, then annotated and augmented for training.
@@ -75,15 +65,6 @@ The dataset was built on **Roboflow** by merging two source datasets into a sing
 
 **Inference speed:** 0.2ms preprocess · 4.4ms inference · 2.2ms postprocess (per image)
 
-### Training Curves
-![Training Results](assets/Results.png)
-
-### Confusion Matrix (Normalized)
-![Confusion Matrix](assets/Confusion_Matrix_Normalized.png)
-
-### Model Summary
-![Model Summary](assets/Model_Summary.png)
-
 **Roboflow model dashboard:** [View Model](https://app.roboflow.com/omar-husnye/new-fruits-wgdh2/3)
 
 ---
@@ -95,7 +76,7 @@ Fruits Detection System/
 ├── main.py                 # Inference script (camera + video modes)
 ├── best.pt                 # Trained YOLOv8 weights
 ├── requirements.txt        # Python dependencies
-├── assets/                 # Demo images, metrics, confusion matrix
+├── assets/results                 # Demo images, metrics, confusion matrix
 └── README.md
 ```
 
@@ -104,11 +85,6 @@ Fruits Detection System/
 ## ⚙️ Installation
 
 ```bash
-# Clone the repository
-
-git clone https://github.com/omarhusnye/Fruits-Detection.git
-
-
 # Install dependencies
 pip install -r requirements.txt
 ```
@@ -158,5 +134,6 @@ python main.py --mode video --weights best.pt --source input.mp4 --output result
 ---
 
 ## 👤 Author
+Omar Hosni
 
 **Omar Hosni**
