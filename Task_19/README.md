@@ -76,7 +76,7 @@ Fruits Detection System/
 ├── main.py                 # Inference script (camera + video modes)
 ├── best.pt                 # Trained YOLOv8 weights
 ├── requirements.txt        # Python dependencies
-├── assets/results                 # Demo images, metrics, confusion matrix
+├── assets/results          # Demo images, metrics, confusion matrix
 └── README.md
 ```
 
@@ -134,6 +134,5 @@ python main.py --mode video --weights best.pt --source input.mp4 --output result
 ---
 
 ## 👤 Author
-Omar Hosni
 
 **Omar Hosni**
